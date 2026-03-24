@@ -23,7 +23,25 @@ runs/pallet_detection/train_batch452.jpg
 runs/pallet_detection/val_batch0_labels.jpg
 runs/pallet_detection/val_batch0_pred.jpg
 
-
-# More general pattern for all image files in runs
-runs/**/*.jpg
-runs/**/*.png
+runs/detect/zira-assessment/test-results/val_batch0_labels.jpg
+runs/detect/zira-assessment/test-results/val_batch0_pred.jpg
+runs/detect/zira-assessment/test-results2/val_batch0_labels.jpg
+runs/detect/zira-assessment/test-results2/val_batch0_pred.jpg
+runs/pallet-detection/train_batch0.jpg
+runs/pallet-detection/train_batch1.jpg
+runs/pallet-detection/train_batch2.jpg
+runs/pallet-detection/train_batch450.jpg
+runs/pallet-detection/train_batch451.jpg
+runs/pallet-detection/train_batch452.jpg
+runs/detect/intership-assignment/pallet-detection/train_batch1.jpg
+runs/detect/intership-assignment/pallet-detection/train_batch2.jpg
+runs/detect/intership-assignment/pallet-detection/train_batch0.jpg
+runs/detect/intership-assignment/pallet-detection/train_batch450.jpg
+runs/detect/intership-assignment/pallet-detection/train_batch451.jpg
+runs/detect/intership-assignment/pallet-detection/train_batch452.jpg
+runs/detect/zira-assessment/test-results3/val_batch0_labels.jpg
+runs/detect/zira-assessment/test-results3/val_batch0_pred.jpg
+runs/pallet-detection/val_batch0_labels.jpg
+runs/pallet-detection/val_batch0_pred.jpg
+runs/detect/intership-assignment/pallet-detection/val_batch0_labels.jpg
+runs/detect/intership-assignment/pallet-detection/val_batch0_pred.jpg
