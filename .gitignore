@@ -11,8 +11,6 @@ runs/detect/intership-assignment/pallet_detection/train_batch451.jpg
 runs/detect/intership-assignment/pallet_detection/train_batch452.jpg
 runs/detect/intership-assignment/pallet_detection/val_batch0_labels.jpg
 runs/detect/intership-assignment/pallet_detection/val_batch0_pred.jpg
-runs/detect/intership-assignment/pallet_detection/*.png
-runs/detect/intership-assignment/pallet_detection/labels.jpg
 
 runs/pallet_detection/train_batch0.jpg
 runs/pallet_detection/train_batch1.jpg
@@ -24,7 +22,7 @@ runs/pallet_detection/train_batch451.jpg
 runs/pallet_detection/train_batch452.jpg
 runs/pallet_detection/val_batch0_labels.jpg
 runs/pallet_detection/val_batch0_pred.jpg
-runs/pallet_detection/*.png
+
 
 # More general pattern for all image files in runs
 runs/**/*.jpg
