@@ -32,25 +32,37 @@ def classify_pallet_color(image_path, model):
                 print(f"HSV values: H={h:.1f}, S={s:.1f}, V={v:.1f}")
 
 def classify_hsv(h, s, v):
-    # White wood high value, low saturation
+    # White wood — high value, low saturation
     if v > 180 and s < 40:
         return 'white'
     
-    # Grey wood mid value, low saturation
+    # Grey wood — mid value, low saturation
     elif v > 100 and s < 40:
         return 'grey'
     
-    # Blue pallet common in industry
+    # Black — very low value
+    elif v < 50:
+        return 'black'
+    
+    # Red pallet — wraps around HSV spectrum (0-10 and 170-180)
+    elif (h < 10 or h > 170) and s > 80:
+        return 'red'
+    
+    # Yellow pallet
+    elif 20 < h < 35 and s > 80:
+        return 'yellow'
+    
+    # Green pallet
+    elif 35 < h < 85 and s > 50:
+        return 'green'
+    
+    # Blue pallet
     elif 90 < h < 130 and s > 50:
         return 'blue'
     
     # Natural/brown wood
     elif 10 < h < 30 and s > 40:
         return 'natural'
-    
-    # Red pallet wraps around HSV spectrum (0-10 and 170-180)
-    elif (h < 10 or h > 170) and s > 80:
-        return 'red'
     
     else:
         return 'unknown'
@@ -60,7 +72,8 @@ images = [
     'images to Classify Color/classify_color_1.png',
     'images to Classify Color/classify_color_2.png',
     'images to Classify Color/classify_color_3.png',
-    'images to Classify Color/classify_color_4.png'
+    'images to Classify Color/classify_color_4.png',
+    'unknown_pallet.png'
 ]
 model = YOLO(r'runs\detect\intership-assignment\pallet-detection\weights\best.pt')
 for img_path in images:
