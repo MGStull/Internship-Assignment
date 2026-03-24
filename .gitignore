@@ -1,4 +1,23 @@
 # Datasets
 dataset/
 __MACOSX/
-Images to Classify Color/
+
+# Training batch images
+runs/detect/intership-assignment/pallet_detection/train_batch0.jpg
+runs/detect/intership-assignment/pallet_detection/train_batch1.jpg
+runs/detect/intership-assignment/pallet_detection/train_batch2.jpg
+runs/detect/intership-assignment/pallet_detection/train_batch450.jpg
+runs/detect/intership-assignment/pallet_detection/train_batch451.jpg
+runs/detect/intership-assignment/pallet_detection/train_batch452.jpg
+runs/detect/intership-assignment/pallet_detection/val_batch0_labels.jpg
+runs/detect/internship-assignment/pallet_detection/val_batch0_pred.jpg
+
+
+runs/pallet_detection/train_batch0.jpg
+runs/pallet_detection/train_batch1.jpg
+runs/pallet_detection/train_batch2.jpg
+runs/pallet_detection/train_batch450.jpg
+runs/pallet_detection/train_batch451.jpg
+runs/pallet_detection/train_batch452.jpg
+runs/pallet_detection/val_batch0_labels.jpg
+runs/pallet_detection/val_batch0_pred.jpg
