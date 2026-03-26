@@ -102,3 +102,10 @@ pallet               AP@50: 0.9950
 board                AP@50: 0.9727
 stringer             AP@50: 0.9922
 stringerProfile      AP@50: 0.9950
+
+
+## size estimation
+**Date** 3/25/26
+**Decision** edit the measure file to rotate the image up to 180 degrees to find best fitting bbox
+**Reasoning** After some testing I found the finding the best bbox needs up to 180 degrees of rotation at 1 degree per iteration
+This resulted in a much more accurate and extremely tightly fitting bbox. 
